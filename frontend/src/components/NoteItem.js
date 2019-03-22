@@ -1,9 +1,18 @@
 import React from 'react';
 
-const NoteList = (props) => (
-  <li>
-    <h2>Title</h2>
-    <p>Caption...</p>
+// let trunc =(n)=> {
+//   return (this.length > n) ? this.substr(0, n - 1) + '&hellip;' : this;
+// };
+
+
+// handleOnclick = () =>{
+
+// }
+
+const NoteList = ({note}) => (
+  <li onClick={this.showNote}>
+    <h2>{note.title}</h2>
+    <p>{note.body}</p>
   </li>
 );
 

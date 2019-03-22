@@ -17,7 +17,7 @@ class Content extends Component {
     } else if (false) {
       return <NoteViewer />;
     } else {
-      return <Instructions />;
+      return <Instructions note = {() => { this.props.selectedNote.showNote() }}/>;
     }
   }
 
